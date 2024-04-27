@@ -69,6 +69,47 @@
     
 </section>
 
+<div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question">
+                <div class="question-text">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+                <div class="question-icon"></div>
+            </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</div>
+        </div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question">
+                <div class="question-text">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+                <div class="question-icon"></div>
+            </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</div>
+        </div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question">
+                <div class="question-text">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+                <div class="question-icon"></div>
+            </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</div>
+        </div>
+    </div>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question">
+                <div class="question-text">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</div>
+                <div class="question-icon"></div>
+            </div>
+            <div class="answer">Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.</div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Footer -->
 <footer>
     <div class="footer-container">
@@ -106,6 +147,23 @@
         var fullscreenMenu = document.getElementById("fullscreenMenu");
         fullscreenMenu.classList.toggle("show");
     }
+
+
+    document.querySelectorAll('.question-text').forEach(item => {
+    item.addEventListener('click', event => {
+        const parent = event.target.closest('.faq-item');
+        parent.classList.toggle('active');
+        const answer = parent.querySelector('.answer');
+        const questionIcon = parent.querySelector('.question-icon');
+        if (parent.classList.contains('active')) {
+            answer.style.display = 'block';
+            questionIcon.textContent = '-'; // Change the icon to "-"
+        } else {
+            answer.style.display = 'none';
+            questionIcon.textContent = '+'; // Change the icon to "+"
+        }
+    });
+});
 </script>
 
 </body>
