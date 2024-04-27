@@ -481,3 +481,78 @@ body {
 
 
 
+
+
+
+footer {
+    background-color: #6b22c4;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next row */
+    justify-content: space-between; /* Add space between columns */
+}
+.p{
+    color: white;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px; /* Add space between columns */
+    margin-bottom: 20px; /* Add space between rows */
+}
+
+.column:last-child {
+    margin-right: 0; /* Remove margin from last column */
+}
+
+.column h4 {
+    color: white;
+    margin-bottom: 10px; /* Add spacing below headings */
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    color: white;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.legal-info {
+    color: #666;
+    text-align: center; /* Center the legal info */
+}
+
+/* Media query for 768px */
+@media only screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Change to column layout */
+    }
+
+    .column {
+        width: 100%; /* Make columns full width */
+    }
+
+    .column:not(:first-child) {
+        margin-top: 20px; /* Add space between columns */
+    }
+}
+
+/* Media query for 375px */
+@media only screen and (max-width: 375px) {
+    .column {
+        width: 100%; /* Make columns full width */
+    }
+}
