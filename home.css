@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6b22c4;
+    padding: 10px 20px;
+}
+
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.nav-items li:last-child {
+    margin-right: 0;
+}
+
+.nav-items li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
