@@ -1,12 +1,11 @@
-/* Reset default margin and padding on the body */
 body {
     margin: 0;
     padding: 0;
 }
 
-/* Basic CSS for the navigation bar */
+
 .navbar {
-    position: relative; /* Set position to relative for absolute positioning of logo */
+    position: relative; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,9 +33,9 @@ body {
     text-decoration: none;
 }
 
-/* Menu icon */
+
 .menu-icon {
-    display: none; /* Hide by default on larger screens */
+    display: none;
     cursor: pointer;
 }
 
@@ -55,7 +54,7 @@ body {
     color: black;
 }
 
-/* Media query for mobile responsiveness */
+/* Media query for mobile responsiveness of navbar*/
 @media only screen and (max-width: 600px) {
     .navbar {
         position: relative;
@@ -113,4 +112,143 @@ body {
     .close-icon {
         display: none;
     }
+}
+
+
+
+
+
+
+/* Image Section */
+.image-section {
+    height: 80vh; 
+    display: flex;
+    align-items: flex-start; 
+}
+
+.container {
+    position: relative;
+}
+
+.container img {
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 40%;
+    transform: translateX(-50%);
+    text-align: start;
+    color: white;
+    z-index: 2;
+    font-size: 24px;
+    justify-content: start;
+}
+
+.layer {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 45%;
+    height: 45%;
+    background-image: linear-gradient(to bottom right, #1CBDDD, #4DCA79);   
+    z-index: 1; 
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase; 
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff8c00;
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-overlay {
+        font-size: 20px;
+    }
+    .layer {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .text-overlay {
+        font-size: 18px;
+    }
+    .layer {
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .text-overlay {
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .text-overlay {
+        top: 10%;
+        font-size: 16px;
+    }
+
+    .layer {
+        top: 96%;
+        left: 0;
+        width: 100%;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .text-overlay {
+        top: 10%;
+        font-size: 16px;
+    }
+
+    .layer {
+        top: 96%;
+        left: 0;
+        width: 100%;
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .text-overlay {
+        font-size: 14px;
+    }
+    .layer {
+        height: 100%;
+    }
+}
+
+/* Mobile (375px) */
+@media only screen and (max-width: 375px) {
+    .text-overlay {
+        top: 5%;
+        font-size: 12px;
+    }
+
+    .layer {
+        top: 96%;
+        left: 0;
+        width: 100%;
+        height: 70%;
+    }
+
 }
