@@ -55,7 +55,6 @@ body {
     color: black;
 }
 
-/* Media query for mobile responsiveness of navbar*/
 @media only screen and (max-width: 600px) {
     .navbar {
         position: relative;
@@ -257,8 +256,6 @@ body {
 
 
 
-
-/* Second Section */
 .second-section {
     display: flex;
     align-items: center;
@@ -340,23 +337,23 @@ body {
 }
 @media only screen and (max-width: 768px) {
     .second-section {
-        flex-direction: column; /* Change to column layout */
-        align-items: center; /* Center align all items */
+        flex-direction: column; 
+        align-items: center; 
     }
     
     .second-section .content {
-        margin-left: 0; /* Remove left margin */
-        text-align: center; /* Center align text */
-        width: 100%; /* Make content full width */
+        margin-left: 0;
+        text-align: center; 
+        width: 100%;
     }
     
     .section2img {
-        padding-left: 0; /* Remove left padding */
-        margin-bottom: 20px; /* Add space between image and title */
+        padding-left: 0;
+        margin-bottom: 20px; 
     }
     
     .second-section .content p{
-        width: 100%; /* Make paragraph and button full width */
+        width: 100%;
     }
     .second-section .content .button{
         width: 70%; 
@@ -459,8 +456,8 @@ body {
     }
     
     .section3img {
-        padding-right: 0; /* Remove right padding */
-        margin-bottom: 20px; /* Add space between image and title */
+        padding-right: 0;
+        margin-bottom: 20px;
     }
     .third-section .content {
         margin-left: 0px; 
@@ -477,11 +474,10 @@ body {
     }
 }
 
-/* FAQ Section */
 .faq-section {
     padding: 40px;
     padding-bottom: 10%;
-    background-color: white; /* Light purple background color */
+    background-color: white;
 }
 
 .faq-section h2 {
@@ -499,9 +495,9 @@ body {
     width: 100%;
     max-width: 600px;
     margin-bottom: 20px;
-    background-color: #FAF8FF; /* White background color for containers */
+    background-color: #FAF8FF; 
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .question {
@@ -519,7 +515,7 @@ body {
 
 .question-text {
     flex: 1;
-    margin-right: 10px; /* Add margin to separate question text and icon */
+    margin-right: 10px; 
 }
 
 .answer {
@@ -528,12 +524,11 @@ body {
     color: #6F6C90;
 }
 
-/* Show answer when question is clicked */
 .faq-item.active .answer {
     display: block;
 }
 
-/* Toggle icon styles */
+
 .question.active .question-icon::after {
     content: "-";
 }
@@ -542,7 +537,7 @@ body {
     content: "+";
 }
 
-/* Rotate the "+" and "-" icon */
+
 .question.active .question-icon::after {
     transform: rotate(45deg);
 }
@@ -561,8 +556,8 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to next row */
-    justify-content: space-between; /* Add space between columns */
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .p{
     color: white;
@@ -570,17 +565,17 @@ footer {
 
 .column {
     flex: 1;
-    margin-right: 20px; /* Add space between columns */
-    margin-bottom: 20px; /* Add space between rows */
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .column:last-child {
-    margin-right: 0; /* Remove margin from last column */
+    margin-right: 0; 
 }
 
 .column h4 {
     color: white;
-    margin-bottom: 10px; /* Add spacing below headings */
+    margin-bottom: 10px;
 }
 
 .column ul {
@@ -602,27 +597,26 @@ hr {
 
 .legal-info {
     color: #666;
-    text-align: center; /* Center the legal info */
+    text-align: center; 
 }
 
-/* Media query for 768px */
 @media only screen and (max-width: 768px) {
     .footer-container {
-        flex-direction: column; /* Change to column layout */
+        flex-direction: column; 
     }
 
     .column {
-        width: 100%; /* Make columns full width */
+        width: 100%;
     }
 
     .column:not(:first-child) {
-        margin-top: 20px; /* Add space between columns */
+        margin-top: 20px; 
     }
 }
 
-/* Media query for 375px */
+
 @media only screen and (max-width: 375px) {
     .column {
-        width: 100%; /* Make columns full width */
+        width: 100%; 
     }
 }
