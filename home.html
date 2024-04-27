@@ -12,15 +12,33 @@
 <!-- Navigation bar -->
 <div class="navbar">
     <div class="logo">
-        <img src="Logo.png">
+        <img src="Logo.png" style="padding-top: 5px; padding-bottom: 5px;">
     </div>
-    <ul class="nav-items">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <!-- Fullscreen menu -->
+    <div class="fullscreen-menu" id="fullscreenMenu">
+        <div class="close-icon" onclick="toggleMenu()">X</div>
+        <ul class="nav-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">Services</a></li>
+            <li><a href="#contact">About Us</a></li>
+            <li><a href="#about">Contact Us</a></li>
+            <li><a href="#about">Careers</a></li>
+        </ul>
+    </div>
 </div>
+
+<!-- JavaScript for toggling the menu -->
+<script>
+    function toggleMenu() {
+        var fullscreenMenu = document.getElementById("fullscreenMenu");
+        fullscreenMenu.classList.toggle("show");
+    }
+</script>
 
 </body>
 </html>
