@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@300;400&family=Quicksand:wght@500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
 }
-
 
 .navbar {
     position: relative; 
@@ -252,3 +253,231 @@ body {
     }
 
 }
+
+
+
+
+
+/* Second Section */
+.second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding: 40px;
+    margin-top: 10px;
+}
+
+.second-section .content {
+    margin-left: 150px;
+}
+
+.second-section .content h3 {
+    color:#6b22c4;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.second-section .content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.second-section .content .button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase; 
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.second-section .content .button:hover {
+    background-color: #ff8c00;
+}
+
+.section2img{
+    width: 300px;
+    padding-left: 170px;
+ }
+
+ @media only screen and (max-width: 1200px) {
+
+    .second-section .content {
+        margin-left: 100px;
+    }
+    .section2img{
+        width: 300px;
+        padding-left: 100px;
+     }
+}
+@media only screen and (max-width: 1050px) {
+    .second-section .content {
+        margin-left: 100px;
+    }
+    .section2img{
+        width: 300px;
+        padding-left: 50px;
+     }
+}
+@media only screen and (max-width: 900px) {
+    .second-section {
+        margin-top: 1px;
+    }
+    .second-section .content {
+        margin-left: 100px;
+    }
+    .section2img{
+        width: 300px;
+        padding-left: 5px;
+     }
+}
+@media only screen and (max-width: 768px) {
+    .second-section {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center align all items */
+    }
+    
+    .second-section .content {
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center align text */
+        width: 100%; /* Make content full width */
+    }
+    
+    .section2img {
+        padding-left: 0; /* Remove left padding */
+        margin-bottom: 20px; /* Add space between image and title */
+    }
+    
+    .second-section .content p{
+        width: 100%; /* Make paragraph and button full width */
+    }
+    .second-section .content .button{
+        width: 70%; 
+    }
+    .section2img{
+        width: 200px;
+     }
+}
+
+
+
+/* Third Section */
+.third-section {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+.third-section .content {
+    margin-left: 250px; 
+}
+
+.third-section .content h3 {
+    color:#6b22c4;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.third-section .content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 70%;
+}
+
+.third-section .content .button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase; 
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.third-section .content .button:hover {
+    background-color: #ff8c00;
+}
+
+.section3img{
+   width: 300px;
+   padding-right: 170px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .third-section .content  {
+        margin-left: 160px;
+    }
+    .section3img{
+        width: 300px;
+        padding-right: 120px;
+     }
+   
+}
+@media only screen and (max-width: 1050px) {
+    .third-section .content  {
+        margin-left: 100px;
+    }
+    .section3img{
+        width: 300px;
+        padding-right: 120px;
+     }
+   
+}
+@media only screen and (max-width: 900px) {
+    .third-section .content  {
+        margin-left: 70px;
+    }
+    .section3img{
+        width: 300px;
+        padding-right: 20px;
+     }
+   
+}
+
+@media only screen and (max-width: 768px) {
+    .third-section {
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .third-section .content {
+        margin-left: 0; 
+        text-align: center; 
+        width: 100%; 
+    }
+    
+    .section3img {
+        padding-right: 0; /* Remove right padding */
+        margin-bottom: 20px; /* Add space between image and title */
+    }
+    .third-section .content {
+        margin-left: 0px; 
+    } 
+    .third-section .content p{
+        width: 100%; 
+    }
+
+    .third-section .content .button{
+        width: 70%; 
+    }
+    .section3img{
+        width: 200px;
+    }
+}
+
+
+
+
+
